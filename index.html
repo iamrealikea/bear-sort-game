@@ -12,6 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Mali:wght@500;600&family=Noto+Sans+Thai:wght@400;500;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="asset/head-icon.png">
   <link rel="preload" href="asset/bear-idle.png" as="image">
   <link rel="preload" href="asset/bear-animate.gif" as="image">
 </head>
@@ -74,9 +75,7 @@
   <header class="site-header">
     <div class="wrap header-row">
       <a class="brand" href="#top" id="top" aria-label="Bear and Sort หน้าแรก">
-        <span class="logo" aria-hidden="true"><svg class="icon">
-            <use href="#i-leaf" />
-          </svg></span>
+        <span class="logo" aria-hidden="true"><img class="logo" src="asset/head-icon.png"></span>
         <span class="brand-text">
           <strong>Bear &amp; Sort</strong>
           <span>ห้องเรียนอัลกอริทึมกลางป่า</span>
@@ -123,7 +122,9 @@
       <div class="sort-bar card">
         <div class="sort-bar-label">
           <span class="sort-badge" aria-hidden="true">
-            <svg class="icon"><use href="#i-leaf" /></svg>
+            <svg class="icon">
+              <use href="#i-leaf" />
+            </svg>
           </span>
           <div class="sort-bar-text">
             <h2 class="sort-bar-heading">เลือกอัลกอริทึม</h2>
@@ -143,17 +144,22 @@
       <div class="arena-header">
         <div class="arena-header-info">
           <h2 id="arena-title">ลานกิจกรรมคุณหมี</h2>
-          <p class="arena-header-desc">เลือกโหมดที่ต้องการ: สังเกตการทำงานทีละก้าวในสนามฝึก หรือลงมือจัดแถวด้วยตนเองในภารกิจ</p>
+          <p class="arena-header-desc">เลือกโหมดที่ต้องการ: สังเกตการทำงานทีละก้าวในสนามฝึก
+            หรือลงมือจัดแถวด้วยตนเองในภารกิจ</p>
         </div>
         <div class="arena-mode-toggle" role="tablist" aria-label="โหมดกิจกรรมการเรียนรู้">
-          <button type="button" class="arena-tab is-active" id="tab-practice" role="tab"
-            aria-selected="true" aria-controls="panel-practice" tabindex="0">
-            <svg class="icon" aria-hidden="true"><use href="#i-play" /></svg>
+          <button type="button" class="arena-tab is-active" id="tab-practice" role="tab" aria-selected="true"
+            aria-controls="panel-practice" tabindex="0">
+            <svg class="icon" aria-hidden="true">
+              <use href="#i-play" />
+            </svg>
             <span>สนามฝึก</span>
           </button>
-          <button type="button" class="arena-tab" id="tab-challenge" role="tab"
-            aria-selected="false" aria-controls="panel-challenge" tabindex="-1">
-            <svg class="icon" aria-hidden="true"><use href="#i-star" /></svg>
+          <button type="button" class="arena-tab" id="tab-challenge" role="tab" aria-selected="false"
+            aria-controls="panel-challenge" tabindex="-1">
+            <svg class="icon" aria-hidden="true">
+              <use href="#i-star" />
+            </svg>
             <span>ภารกิจจัดแถว</span>
           </button>
         </div>
